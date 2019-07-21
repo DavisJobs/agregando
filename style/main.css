@@ -1,0 +1,280 @@
+/*TODO: global*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: black;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: Helvetica;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    color: #c8c8c8;
+    font-size: 24px;
+    border-left: 3px solid #c8c8c8;
+    padding-left: 7px;
+    margin-bottom: 26px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+/* TODO: layaut*/
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: auto;
+}
+
+/*TODO: header*/
+header {
+    background-color: black;
+    height: 80px; 
+    padding: 0 20px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    margin: auto;
+    
+}
+
+header a {
+    color: #fff;
+    padding-bottom: 9px;
+}
+
+header a:hover {
+    border-bottom: 3px solid  #42704e;
+    transition: 300ms ease;
+}
+
+header .logo {
+    font-size: 32px;   
+}
+
+header nav {
+    font-size: 16px;
+}
+
+header nav a {
+    color: #c7c7c7;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+}
+
+header ul li {
+    margin-left: 15px;
+}
+
+/*TODO: main*/
+main {
+    padding: 35px 0;
+}
+
+main section {
+    margin-bottom: 70px;
+}
+
+/*TODO: hover*/
+main section:hover h2 {
+    color: #42704e;
+    transition: 500ms ease;
+    border-color: #42704e;
+} 
+/**/
+/*TODO: sobre mi*/
+
+.about-me .texto {
+    display: flex;
+}
+
+.about-me p {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.about-me ul {
+    display: flex;
+}
+
+.about-me ul li {
+    margin-right: 10px;
+}
+
+.about-me ul li a {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 38px;
+    color: #fff;
+    font-size: 18px;
+}
+
+/*link social*/
+.about-me .linkedin {
+    background-color: #0077B5;
+}
+
+.about-me .github {
+    background-color: black;
+}
+
+.about-me .twitter {
+    background-color: #1EA1F2;
+}
+
+.about-me .skype {
+    background-color:  #0495E2;
+}
+/**/
+
+.about-me figure {
+    margin-right: 40px;
+}
+
+.about-me figure img {
+    border-radius: 100%;
+    border: 6px solid #f0f0f0;
+}
+
+.about-me p {
+    margin-bottom: 36px;
+}
+
+/*TODO: hover*/
+.about-me:hover img {
+    border-color: #42704e;
+    transition: 500ms ease;
+}
+/**/
+
+/*TODO: portfolio*/
+
+.portfolio .articles {
+    display: flex;
+    flex-wrap: wrap;   
+    justify-content: space-between;
+}
+
+.portfolio article {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.portfolio article:hover .text {
+    display: flex;  
+}
+
+.portfolio article:hover img {
+    border-color: #42704e;
+}
+
+.portfolio .text {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: rgb(0, 0, 0,0.5);
+    color: #fff;
+    padding: 13px;
+     
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+}
+
+.portfolio .text h3 {
+    margin-bottom: 6px
+}
+
+.portfolio .text ul {
+    display: flex;
+    align-items: center;
+}
+
+.portfolio .text ul li {
+    margin-right: 4px;
+}
+
+.portfolio .text span {
+    display: inline-block;
+    font-size: 11px;
+    font-family: Helvetica;
+    background-color: #4c2358;
+    padding: 5px 14px;
+    border-radius: 12px;
+}
+
+.portfolio img {
+    border: 10px solid #f0f0f0;
+}
+
+/*TODO: Habilidades*/
+.habilidades-cont  {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.habilidades .skill {
+    margin-bottom: 32px;
+    display: flex;
+     
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px; 
+}
+
+.habilidades .skill h3 {
+    font-weight: bold; 
+    font-size: 13px;
+    position: absolute;
+    color: #fff;
+}
+
+.habilidades .skill .barra {
+    width: 370px;
+    height: 21px;
+    background-color: #4c2358;
+    border-radius: 11px;
+    border: solid 1px #d5d5d5;
+    
+}
+
+.habilidades .skill .barra .relleno {
+    width: 125px;
+    height: 19px;
+    background-color: #42704e;
+    border-radius: 20px;
+    transition: 500ms ease;
+}
+/*TODO: hover*/
+
+.habilidades:hover .barra .relleno {
+    width: 200px;
+    transition: 500ms ease;
+}
