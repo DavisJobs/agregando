@@ -237,23 +237,25 @@ main section:hover h2 {
 .habilidades-cont  {
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
+    justify-content: space-between;
+}
+
+.habilidades h2 {
+    margin-bottom: 43px;
 }
 
 .habilidades .skill {
     margin-bottom: 32px;
     display: flex;
-     
-    justify-content: center;
+    padding: 0 25px;
     align-items: center;
-    margin-left: 25px; 
 }
 
 .habilidades .skill h3 {
     font-weight: bold; 
     font-size: 13px;
     position: absolute;
-    color: #fff;
+    margin: 0 -20px;
 }
 
 .habilidades .skill .barra {
@@ -262,7 +264,8 @@ main section:hover h2 {
     background-color: #4c2358;
     border-radius: 11px;
     border: solid 1px #d5d5d5;
-    
+    margin-left: 55px;
+     
 }
 
 .habilidades .skill .barra .relleno {
@@ -277,4 +280,87 @@ main section:hover h2 {
 .habilidades:hover .barra .relleno {
     width: 200px;
     transition: 500ms ease;
+}
+
+/*TODO: formulario*/
+.formulario {
+   display: flex;
+   
+}
+
+.formulario .form   {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ input[type="text"] {
+    width: 305px;
+    height: 40px;
+    margin: 10px 0;
+ }
+
+.input-cont {
+    margin-right: 21px;
+}
+
+ .input-cont label {
+   margin: 12px 0;
+ }
+
+ input[type="text"]:hover {
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+    border: solid 1px #42704e;
+ }
+
+ textarea {
+    width: 632px;
+    height: 131px;
+    margin: 10px 0;
+ }
+
+ textarea:hover {
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+    border: solid 1px #42704e;
+ }
+
+ button {
+    width: 160px;
+    height: 44px;
+    border: solid 1px #d5d5d5;
+    background-color: #42704e;
+    color: #fff;
+    margin-top: 33px;
+ }
+
+ /*TODO: ubicacion*/
+.ubicacion {
+    border-left: 3px solid #c7c7c7;
+    padding: 0 19px;
+}
+.ubicacion h4 {
+    font-weight: bold;
+}
+
+.ubicacion p {
+    padding: 20px 0;
+}
+
+.ubicacion a {
+    color: black;
+}
+
+/*TODO: footer */
+footer {
+    background: black;
+    color: #fff;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+footer a {
+    color: #fff;
 }
